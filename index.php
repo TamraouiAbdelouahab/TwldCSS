@@ -103,21 +103,63 @@
         ?>
         <div class="w-4/5 ml-60 pt-12 flex">
             <div class="h-full w-1/2">
-            <img src="ClassImage.png" alt="" class="w-100">
-            <br>
-            <p class="text-xl font-bold">Competence:</p>
-            <br>
-            <div class="flex  flex-wrap gap-7">
-            <p class="rounded-full border border-gray-700 p-2 cursor-default w-1/4 text-center">jjkdjadak</p>
-            <p class="rounded-full border border-gray-700 p-2 cursor-default w-1/4 text-center">jjkdjadak</p>
-            <p class="rounded-full border border-gray-700 p-2 cursor-default w-1/4 text-center">jjkdjadak</p>
-            <p class="rounded-full border border-gray-700 p-2 cursor-default w-1/4 text-center">jjkdjadak</p>
-            <p class="rounded-full border border-gray-700 p-2 cursor-default w-1/4 text-center">jjkdjadak</p>
+                <img src="ClassImage.png" alt="" class="w-100">
+                <br>
+                <p class="text-xl font-bold">Competence:</p>
+                <br>
+                <div class="flex  flex-wrap gap-7">
+                    <p class="rounded-full border border-gray-700 p-2 cursor-default w-1/4 text-center">jjkdjadak</p>
+                    <p class="rounded-full border border-gray-700 p-2 cursor-default w-1/4 text-center">jjkdjadak</p>
+                    <p class="rounded-full border border-gray-700 p-2 cursor-default w-1/4 text-center">jjkdjadak</p>
+                    <p class="rounded-full border border-gray-700 p-2 cursor-default w-1/4 text-center">jjkdjadak</p>
+                    <p class="rounded-full border border-gray-700 p-2 cursor-default w-1/4 text-center">jjkdjadak</p>
+                </div>
             </div>
-            </div>
-            <div class="h-full w-1/2">
-            <p class="text-3xl font-semibold text-center">Gestion des briefs</p>
-            
+            <div class="h-full w-1/2 p-5">
+                <p class="text-3xl font-semibold text-center">Gestion des briefs</p>
+                <div class="flex flex-wrap justify-end">
+                    <p class="rounded-lg  p-1 pe-3 ps-3 bg-gray-200 cursor-pointer text-center">To do</p>
+                </div>
+                <br>
+                <div>
+                    <small class="text-blue-500">Start date:</small>
+                    <p class='text-2xl '>Monday 07 2024</p>
+                </div>
+                <div>
+                    <small class="text-blue-500">End date:</small>
+                    <p class='text-2xl'>Monday 07 2024</p>
+                </div>
+                <br>
+                <div class="flex gap-3 ">
+                    <p class='text-2xl'>attachment:</p>
+                    <button>
+                        <svg width="51" height="39" viewBox="0 0 51 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M25.1448 22.3124L26.2846 23.8012L25.1513 24.6688L24.0133 23.8075L25.1448 22.3124ZM23.2301 7.9739C23.2273 6.93837 24.0644 6.09658 25.1 6.09372C26.1355 6.09085 26.9773 6.92799 26.9801 7.96352L23.2301 7.9739ZM36.7313 15.8035L26.2846 23.8012L24.005 20.8236L34.4517 12.8259L36.7313 15.8035ZM24.0133 23.8075L13.5225 15.8677L15.7856 12.8776L26.2763 20.8173L24.0133 23.8075ZM23.2698 22.3176L23.2301 7.9739L26.9801 7.96352L27.0198 22.3072L23.2698 22.3176Z" fill="#222222"/>
+                            <path d="M10.4688 25.5L10.4688 27.0937C10.4687 28.8542 12.3436 30.2812 14.6563 30.2812L35.5938 30.2813C37.9065 30.2813 39.7813 28.8542 39.7813 27.0938V25.5" stroke="#222222" stroke-width="3.75"/>
+                        </svg>
+                    </button>
+                </div>
+                <br>
+                <div>
+                    <button type="button" id="Etat">
+                        <svg width="30" height="30" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="25" cy="25" r="23" stroke="black" stroke-width="4"/>
+                            <rect x="12" y="23" width="26" height="4" rx="1" fill="black"/>
+                            <rect x="27" y="12" width="26" height="4" rx="1" transform="rotate(90 27 12)" fill="black"/>
+                        </svg>
+                    </button>
+                    <form class="flex flex-col gap-5">
+                            <div>
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="LienInput">Lien:</label>
+                                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="LienInput" type="text" placeholder="Lien">
+                            </div>
+                            <div class="self-end">
+                                <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                                    valider
+                                </button>
+                            </div>
+                    </form>
+                </div>
             </div>
         </div>
         <?php
